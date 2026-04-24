@@ -58,6 +58,8 @@ Hooks.once('init', function () {
   CONFIG.ActiveEffect.legacyTransferral = false;
 
   // Register sheet application classes
+  const {Actors, Items} = foundry.documents.collections;
+  const {ActorSheet, ItemSheet} = foundry.appv1.sheets;
   Actors.unregisterSheet('core', ActorSheet);
   Actors.registerSheet('hollyhearth', HollyHearthActorSheet, {
     makeDefault: true,

@@ -21,6 +21,26 @@ export default class HollyHearthCharacter extends HollyHearthActorBase {
       return obj;
     }, {}));
 
+    // Iterate over approach names and create a new SchemaField for each.
+    schema.approaches = new fields.SchemaField(Object.keys(CONFIG.HOLLY_HEARTH.approaches).reduce((obj, approach) => {
+      obj[approach] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0, max:2 }),
+      });
+      return obj;
+    }, {}));
+
+    // Iterate over skill names and create a new SchemaField for each.
+    schema.skills = new fields.SchemaField(Object.keys(CONFIG.HOLLY_HEARTH.skills).reduce((obj, skill) => {
+      obj[skill] = new fields.SchemaField({
+        value: new fields.NumberField({ ...requiredInteger, initial: 0, min: 0, max:3 }),
+        focuses: new fields.ArrayField(new fields.SchemaField({
+          name: new fields.StringField(),
+          expertise: new fields.ArrayField(new fields.StringField())
+        }))
+      });
+      return obj;
+    }, {}));
+
     return schema;
   }
 
