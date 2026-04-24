@@ -5,11 +5,13 @@
   "authors": [
     {
       "name": "Asacolips",
-      "discord": "asacolips"
+      "discord": "asacolips",
+      "flags": {}
     },
     {
       "name": "Lee Talman",
-      "discord": ".pizzaWizard"
+      "discord": ".pizzaWizard",
+      "flags": {}
     }
   ],
   "url": "Replace this with a link to your public repository",
@@ -21,26 +23,32 @@
     {
       "type": "setup",
       "url": "systems/hollyhearth/assets/anvil-impact.png",
-      "thumbnail": "systems/hollyhearth/assets/anvil-impact.png"
+      "thumbnail": "systems/hollyhearth/assets/anvil-impact.png",
+      "loop": false,
+      "flags": {}
     }
   ],
   "version": "0.0.1",
   "compatibility": {
-    "minimum": 14,
+    "minimum": "14",
     "verified": "14.360"
   },
-  "esmodules": ["module/hollyhearth.mjs"],
-  "styles": ["css/hollyhearth.css"],
+  "esmodules": [
+    "module/hollyhearth.mjs"
+  ],
+  "styles": [
+    {
+      "src": "css/hollyhearth.css"
+    }
+  ],
   "languages": [
     {
       "lang": "en",
       "name": "English",
-      "path": "lang/en.json"
+      "path": "lang/en.json",
+      "flags": {}
     }
   ],
-  "packs": [],
-  "packFolders": [],
-  "socket": false,
   "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
   "download": "This must link to a .zip file of the current version",
   "background": "systems/hollyhearth/assets/anvil-impact.png",
@@ -56,5 +64,6 @@
       "feature": {},
       "spell": {}
     }
-  }
+  },
+  "flags": {}
 }
