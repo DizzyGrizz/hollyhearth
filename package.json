@@ -1,6 +1,6 @@
 {
   "name": "hollyhearth",
-  "version": "2.0.0",
+  "version": "0.0.1",
   "description": "CSS compiler for the HollyHearth system",
   "scripts": {
     "build": "sass src/scss/hollyhearth.scss css/hollyhearth.css --style=expanded --no-source-map",
