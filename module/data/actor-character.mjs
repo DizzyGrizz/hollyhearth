@@ -52,6 +52,16 @@ export default class HollyHearthCharacter extends HollyHearthActorBase {
       // Handle ability label localization.
       this.abilities[key].label = game.i18n.localize(CONFIG.HOLLY_HEARTH.abilities[key]) ?? key;
     }
+
+    /*
+    for (const key in this.approaches) {
+      console.log(CONFIG.HOLLY_HEARTH.approachAbbreviations[key])
+      this.approaches[key].label = game.il8n.localize(CONFIG.HOLLY_HEARTH.approachAbbreviations[key]) ?? key;
+    }
+    for (const key in this.skills) {
+      this.skills[key].label = game.il8n.localize(CONFIG.HOLLY_HEARTH.skills[key]) ?? key;
+    }
+      */
   }
 
   getRollData() {

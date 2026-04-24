@@ -3,7 +3,7 @@ import {
   prepareActiveEffectCategories,
 } from '../helpers/effects.mjs';
 
-const {ActorSheet} = foundry.appv1.sheets.ActorSheet;
+const {ActorSheet} = foundry.appv1.sheets;
 const {TextEditor} = foundry.applications.ux;
 
 /**
