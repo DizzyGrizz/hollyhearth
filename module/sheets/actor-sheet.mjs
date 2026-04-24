@@ -3,11 +3,14 @@ import {
   prepareActiveEffectCategories,
 } from '../helpers/effects.mjs';
 
+const {ActorSheet} = foundry.appv1.sheets.ActorSheet;
+const {TextEditor} = foundry.applications.ux;
+
 /**
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class HollyHearthActorSheet extends foundry.appv1.sheets.ActorSheet {
+export class HollyHearthActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
