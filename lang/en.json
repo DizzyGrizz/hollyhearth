@@ -1,12 +1,28 @@
 {
   "HOLLY_HEARTH": {
-    "Ability": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+    "Approach": {
+      "Fast": { "long": "Fast", "abbr": "fast", "phrase": "Do it Fast" },
+      "Well": { "long": "Well", "abbr": "well", "phrase": "Do it Well"  },
+      "Subt": { "long": "Subtle", "abbr": "subt", "phrase": "Do it Subtly"  },
+      "Loud": { "long": "Loud", "abbr": "loud", "phrase": "Do it Loudly"  },
+      "Care": { "long": "Careful", "abbr": "care", "phrase": "Do it Carefully"  },
+      "Luck": { "long": "Lucky", "abbr": "luck", "phrase": "Get Lucky"  }
+    },
+    "Skill": {
+      "Socialize": { "long": "Socialize", "abbr": "scl" },
+      "Perform": { "long": "Perform", "abbr": "prf" },
+      "Craft": { "long": "Craft", "abbr": "cft" },
+      "Subdue": { "long": "Subdue", "abbr": "sbd" },
+      "Injure": { "long": "Injure", "abbr": "inj" },
+      "Reason": { "long": "Reason", "abbr": "rsn" },
+      "Research": { "long": "Research", "abbr": "rsr" },
+      "Infiltrate": { "long": "Infiltrate", "abbr": "inf" },
+      "Barter": { "long": "Barter", "abbr": "brt" },
+      "Teach": { "long": "Teach", "abbr": "tch" },
+      "Exert": { "long": "Exert", "abbr": "exr" },
+      "Finesse": { "long": "Finesse", "abbr": "fin" },
+      "Deceive": { "long": "Deceive", "abbr": "dec" },
+      "Nurture": { "long": "Nurture", "abbr": "nur" }
     },
     "SheetLabels": {
       "Actor": "HollyHearth Actor Sheet",
